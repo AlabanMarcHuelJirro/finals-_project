@@ -1,0 +1,149 @@
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .logo {
+      text-align: center;
+      padding: 40px 0 0;
+    }
+
+    .logo img {
+      width: 120px;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header h2 {
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 10px;
+      color: #ccc;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      background: url('images/skateboard.jpg') center/cover no-repeat;
+      height: 500px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .drop-highlight {
+      background-color: #222;
+      padding: 30px;
+      border-left: 5px solid orange;
+      margin-top: 40px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .drop-highlight h4 {
+      font-size: 22px;
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .drop-highlight img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .drop-highlight p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid orange;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #000;
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    footer strong {
+      display: block;
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      .hero {
+        height: 300px;
+      }
+
+      .section {
+        padding: 40px 20px;
+      }
+
+      .section h3 {
+        font-size: 22px;
+      }
+
+      .drop-highlight h4 {
+        font-size: 18px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
