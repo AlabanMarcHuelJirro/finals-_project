@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bayawak Clothing</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <ul class="navlinks" id="navlinks">
+  <header class="top-nav">
+    <div class="nav-container">
+      <div class="nav-logo">Bayawak Clothing</div>
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-menu" id="navMenu">
         <li><a href="about.html">About</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="lookbook.html">Lookbook</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button class="toggle-btn" onclick="toggleMenu()">☰</button>
-    </nav>
-    <div class="logo">
-    <img src="images/bayawak-logo.png" alt="Bayawak Logo">
     </div>
+  </header>
+
+  <div class="logo">
+    <img src="images/bayawak-logo.png" alt="Bayawak Logo" />
+  </div>
+
+  <header>
     <h1>BAYAWAK CLOTHING</h1>
     <h2>THREADS THAT MOVE, GRIT THAT STAYS</h2>
   </header>
-  
+
   <div class="hero"></div>
 
   <div class="section">
     <h3>What We Stand For</h3>
-    <p>Welcome to Bayawak - a lifestyle and streetwear brand inspired by the bayawak (monitor lizard). We stand for resilience, adaptability, and grit, the same traits that thrive in the streets and stories of the Filipino soul.</p>
+    <p>Welcome to Bayawak — a lifestyle and streetwear brand inspired by the bayawak (monitor lizard). We stand for resilience, adaptability, and grit, the same traits that thrive in the streets and stories of the Filipino soul.</p>
     <p>Bayawak Clothing is more than fabric. It’s a mindset. A tribute to Filipino street culture, raw creativity, and the grind that shapes us.</p>
-    
+
     <div class="drop-highlight">
       <h4>🔥 Drop of the Month: Kalye Statement Tee</h4>
-      <img src="images/kalye-statement-tee.jpg" alt="Kalye Statement Tee">
+      <img src="images/kalye-statement-tee.jpg" alt="Kalye Statement Tee" />
       <p>Bold Tagalog quote. Street-ready fit.<br>Limited release. Available now.</p>
     </div>
   </div>
@@ -44,8 +49,12 @@
     <strong>Born in the Streets, Built for the Grind.</strong>
   </footer>
 
+  <script>
+    function toggleNav() {
+      document.getElementById('navMenu').classList.toggle('show');
+    }
+  </script>
+
 </body>
-
 </html>
-
 
