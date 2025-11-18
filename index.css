@@ -5,6 +5,58 @@ body {
   color: #fff;
 }
 
+.top-nav {
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu li a:hover {
+  border-bottom: 2px solid orange;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 .logo {
   text-align: center;
   padding: 40px 0 0;
@@ -100,78 +152,6 @@ footer strong {
   color: #fff;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 60px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: 2px solid transparent;
-}
-
-nav a:hover {
-  border-bottom: 2px solid orange;
-}
-
-.top-nav {
-  background-color: #111;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  padding: 10px 20px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.nav-logo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: 2px solid transparent;
-}
-
-.nav-menu li a:hover {
-  border-bottom: 2px solid orange;
-}
-
-.nav-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
   header h1 {
     font-size: 36px;
@@ -191,12 +171,6 @@ nav a:hover {
 
   .drop-highlight h4 {
     font-size: 18px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
 
   .nav-menu {
