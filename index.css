@@ -1,194 +1,141 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
-  color: #fff;
-}
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
 
-.top-nav {
-  background-color: #111;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  padding: 10px 20px;
-}
+    .logo {
+      text-align: center;
+      padding: 40px 0 0;
+    }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
-}
+    .logo img {
+      width: 120px;
+      max-width: 100%;
+      border-radius: 8px;
+    }
 
-.nav-logo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: 1px;
-}
+    header {
+      text-align: center;
+      padding: 20px;
+    }
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
 
-.nav-menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: 2px solid transparent;
-}
+    header h2 {
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 10px;
+      color: #ccc;
+      text-transform: uppercase;
+    }
 
-.nav-menu li a:hover {
-  border-bottom: 2px solid orange;
-}
+    .hero {
+      background: url('images/skateboard.jpg') center/cover no-repeat;
+      height: 500px;
+    }
 
-.nav-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-.logo {
-  text-align: center;
-  padding: 40px 0 0;
-}
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
 
-.logo img {
-  width: 120px;
-  max-width: 100%;
-  border-radius: 8px;
-}
+    .section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ccc;
+    }
 
-header {
-  text-align: center;
-  padding: 20px;
-}
+    .drop-highlight {
+      background-color: #222;
+      padding: 30px;
+      border-left: 5px solid orange;
+      margin-top: 40px;
+      border-radius: 8px;
+      text-align: center;
+    }
 
-header h1 {
-  font-size: 48px;
-  margin: 0;
-  letter-spacing: 2px;
-}
+    .drop-highlight h4 {
+      font-size: 22px;
+      color: orange;
+      margin-bottom: 20px;
+    }
 
-header h2 {
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 10px;
-  color: #ccc;
-  text-transform: uppercase;
-}
+    .drop-highlight img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 8px;
+    }
 
-.hero {
-  background: url('images/skateboard.jpg') center/cover no-repeat;
-  height: 500px;
-}
+    .drop-highlight p {
+      font-size: 16px;
+      color: #ccc;
+    }
 
-.section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #000;
+      color: #ccc;
+      font-size: 16px;
+    }
 
-.section h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
+    footer strong {
+      display: block;
+      margin-top: 10px;
+      color: #fff;
+    }
 
-.section p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #ccc;
-}
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
 
-.drop-highlight {
-  background-color: #222;
-  padding: 30px;
-  border-left: 5px solid orange;
-  margin-top: 40px;
-  border-radius: 8px;
-  text-align: center;
-}
+      .hero {
+        height: 300px;
+      }
 
-.drop-highlight h4 {
-  font-size: 22px;
-  color: orange;
-  margin-bottom: 20px;
-}
+      .section {
+        padding: 40px 20px;
+      }
 
-.drop-highlight img {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto 20px;
-  display: block;
-  border-radius: 8px;
-}
+      .section h3 {
+        font-size: 22px;
+      }
 
-.drop-highlight p {
-  font-size: 16px;
-  color: #ccc;
-}
+      .drop-highlight h4 {
+        font-size: 18px;
+      }
 
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #000;
-  color: #ccc;
-  font-size: 16px;
-}
+      .nav-menu {
+      flex-direction: column;
+      background-color: #111;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      display: none;
+      padding: 20px 0;
+    }
 
-footer strong {
-  display: block;
-  margin-top: 10px;
-  color: #fff;
-}
+    .nav-menu.show {
+      display: flex;
+    }
 
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 36px;
-  }
-
-  .hero {
-    height: 300px;
-  }
-
-  .section {
-    padding: 40px 20px;
-  }
-
-  .section h3 {
-    font-size: 22px;
-  }
-
-  .drop-highlight h4 {
-    font-size: 18px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    display: none;
-    padding: 20px 0;
-  }
-
-  .nav-menu.show {
-    display: flex;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-}
+    .nav-toggle {
+      display: block;
+    }
