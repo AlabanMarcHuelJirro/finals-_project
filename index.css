@@ -1,3 +1,4 @@
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -86,6 +87,26 @@
       color: #ccc;
     }
 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid orange;
+    }
+
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -121,21 +142,9 @@
         font-size: 18px;
       }
 
-      .nav-menu {
-      flex-direction: column;
-      background-color: #111;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      display: none;
-      padding: 20px 0;
-    }
-
-    .nav-menu.show {
-      display: flex;
-    }
-
-    .nav-toggle {
-      display: block;
-    }
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    
